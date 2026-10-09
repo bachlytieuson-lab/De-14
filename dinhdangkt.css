@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2b2b2b;
+}
+
+/* CONTAINER */
+.container {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* HEADER LOGO */
+.header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+/* NAV BAR (MENU + SEARCH) */
+.nav-bar {
+    background-color: #233254;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 15px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 6px 12px;
+    display: block;
+    transition: color 0.2s;
+}
+
+/* HOVER MENU (Yêu cầu 1, 2) */
+.main-nav ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* SEARCH BOX */
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    height: 24px;
+    width: 180px;
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    outline: none;
+}
+
+.search-box button {
+    height: 24px;
+    background-color: #cd1818;
+    color: #fff;
+    border: none;
+    padding: 0 10px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-box button:hover {
+    background-color: #a01010;
+}
+
+/* BANNER */
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+/* MAIN CONTENT */
+.content {
+    padding: 15px;
+}
+
+/* SECTION COMMON */
+.section-block {
+    margin-bottom: 20px;
+}
+
+.section-title a {
+    font-size: 15px;
+    color: #233254;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* HOVER TIÊU ĐỀ TIN (Yêu cầu 1) */
+.section-title a:hover {
+    color: #cd1818;
+}
+
+/* YÊU CẦU 4: HOVER TẤT CẢ ẢNH CONTENT XUẤT HIỆN VIỀN 1PX NÉT ĐÔI MÀU ĐEN (#000) */
+.content img {
+    border: 1px transparent double;
+    transition: border 0.2s;
+}
+
+.content img:hover {
+    border: 1px #000 double;
+}
+
+/* KHUYẾN MÃI HOT */
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: 31%;
+    border: 1px solid #e1e1e1;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.product-img img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.product-name a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0 5px;
+    display: block;
+    transition: color 0.2s;
+}
+
+/* HOVER TIÊU ĐỀ SẢN PHẨM (Yêu cầu 1) */
+.product-name a:hover {
+    color: #cd1818;
+}
+
+.price-box {
+    margin-bottom: 10px;
+}
+
+.current-price {
+    color: #cd1818;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.old-price {
+    color: #666;
+    text-decoration: line-through;
+    font-size: 11px;
+}
+
+.btn-order {
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    padding: 6px 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-order:hover {
+    background-color: #cd1818;
+}
+
+/* ƯU ĐÃI KHI THANH TOÁN ONLINE */
+.offer-grid {
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer-card {
+    width: 48%;
+    text-align: center;
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn-claim {
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    padding: 6px 25px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-claim:hover {
+    background-color: #cd1818;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #233254;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 11px;
+    font-weight: bold;
+}

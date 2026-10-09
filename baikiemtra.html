@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề 14 - WEB1013</title>
+    <link rel="stylesheet" href="dinhdangkt.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="header">
+            <div class="logo">
+                <a href="#"><img src="images/LOGO.png" alt="FPT Shop"></a>
+            </div>
+        </header>
+
+        <div class="nav-bar">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Máy tính</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                </ul>
+            </nav>
+
+            <form class="search-box" id="searchForm" onsubmit="return validateSearch()">
+                <input type="text" id="searchInput">
+                <button type="submit">TÌM KIẾM</button>
+            </form>
+        </div>
+
+        <section class="banner">
+            <a href="#"><img src="images/IMG (2).jpg" alt="Banner Khuyến Mãi"></a>
+        </section>
+
+        <main class="content">
+            
+            <section class="section-block">
+                <h2 class="section-title"><a href="#">KHUYẾN MÃI HOT</a></h2>
+                
+                <div class="product-grid">
+                    <!-- SP 1 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a href="#"><img src="images/sp.jpg" alt="Oppo Reno5"></a>
+                        </div>
+                        <h3 class="product-name"><a href="#">Oppo Reno5 8GB - 128GB</a></h3>
+                        <div class="price-box">
+                            <span class="current-price">8.690.000đ</span>
+                            <span class="old-price">9.500.000đ</span>
+                        </div>
+                        <button class="btn-order">Đặt hàng</button>
+                    </div>
+
+                    <!-- SP 2 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a href="#"><img src="images/sp.jpg" alt="Oppo Reno5"></a>
+                        </div>
+                        <h3 class="product-name"><a href="#">Oppo Reno5 8GB - 128GB</a></h3>
+                        <div class="price-box">
+                            <span class="current-price">8.690.000đ</span>
+                            <span class="old-price">9.500.000đ</span>
+                        </div>
+                        <button class="btn-order">Đặt hàng</button>
+                    </div>
+
+                    <!-- SP 3 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a href="#"><img src="images/sp.jpg" alt="Oppo Reno5"></a>
+                        </div>
+                        <h3 class="product-name"><a href="#">Oppo Reno5 8GB - 128GB</a></h3>
+                        <div class="price-box">
+                            <span class="current-price">8.690.000đ</span>
+                            <span class="old-price">9.500.000đ</span>
+                        </div>
+                        <button class="btn-order">Đặt hàng</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <h2 class="section-title"><a href="#">ƯU ĐÃI KHI THANH TOÁN ONLINE</a></h2>
+                
+                <div class="offer-grid">
+                    <div class="offer-card">
+                        <a href="#"><img src="images/vnq.png" alt="Ưu đãi VNQ"></a>
+                        <button class="btn-claim">NHẬN NGAY</button>
+                    </div>
+                    <div class="offer-card">
+                        <a href="#"><img src="images/momo.png" alt="Ưu đãi Momo"></a>
+                        <button class="btn-claim">NHẬN NGAY</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p>TÊN SINH VIÊN</p>
+        </footer>
+
+    </div>
+    <script>
+        function validateSearch() {
+            var input = document.getElementById("searchInput").value.trim();
+            if (input === "") {
+                alert("Vui lòng nhập từ khóa để tìm kiếm!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+</html>
